@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
   constructor(private readonly homeService: HomeService, private meta: Meta, private tile: Title) { }
 
   ngOnInit(): void {
-    this.meta.addTag({ name: "title", content: "Lista de frutas" });
-    this.tile.setTitle("Lista de frutas")
+    this.meta.addTag({ name: "title", content: "First Class Restore" });
+    this.tile.setTitle("First Class Restore")
     this.fruitList = this.homeService.findAll()
   }
 }
